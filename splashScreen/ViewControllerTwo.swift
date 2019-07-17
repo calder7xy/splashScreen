@@ -14,9 +14,15 @@ class ViewControllerTwo: UIViewController {
     
     @IBOutlet weak var passWordText: UITextField!
     
+    @IBOutlet weak var loginButtonStyle: UIButton!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        loginButtonStyle.layer.cornerRadius = 18
+        loginButtonStyle.clipsToBounds = true
+        
         
     }
     @IBAction func forgotUserName(_ sender: UIButton) {
